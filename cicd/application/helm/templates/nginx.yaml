@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: hwchiu/cicd-app:{{ .Values.nginx.image.tag }}
+        image: {{ .Values.nginx.image.img }}:{{ .Values.nginx.image.tag }}
         ports:
         - containerPort: 80
         imagePullPolicy: {{ .Values.nginx.pullPolicy }}

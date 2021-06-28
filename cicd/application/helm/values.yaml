@@ -5,6 +5,7 @@
 nginx:
   replicaCount: 3
   image:
+    img: newfishg/cicd-abc
     tag: latest
   pullPolicy: Always
   prefix: test
